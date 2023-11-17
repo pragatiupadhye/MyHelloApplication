@@ -41,9 +41,9 @@ public abstract class MissionDatabase extends RoomDatabase {
     static class AsynTask extends AsyncTask<Void,Void,Void>
     {
         private MisssionDao misssionDao;
-        AsynTask(MissionDatabase actorDatabase)
+        AsynTask(MissionDatabase missionDatabase)
         {
-            misssionDao=actorDatabase.misssionDao();
+            misssionDao=missionDatabase.misssionDao();
         }
 
         @Override
